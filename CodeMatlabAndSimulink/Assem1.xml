@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="10/26/20||22:41:47" using="Simscape Multibody Link Version 6.0" from="SolidWorks 26.2.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Assem1" uid="Assem1" version="119">
+<AssemblyFile name="Assem1.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="VB_A_Basect-1" uid="VB_A_Basect-1" grounded="true" entityUid="VB_A_Basect*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.041629718554665157 0.025613013792494255 0.26421485246690457</Translation>
+</Transform>
+</Instance>
+<Instance name="Arm1ct-1" uid="Arm1ct-1" entityUid="Arm1ct*:*Default">
+<Transform>
+<Rotation>0 0.21026696494818076 0.97764400650312422 0 0.97764400650312422 -0.21026696494818076 -1 0 0</Rotation>
+<Translation>0.0083702814453348456 0.38061301379249424 0.26421485246690457</Translation>
+</Transform>
+</Instance>
+<Instance name="Arm2ct-1" uid="Arm2ct-1" entityUid="Arm2ct*:*Default">
+<Transform>
+<Rotation>-0.10448967013976861 0.99452597192536019 0 -0.99452597192536019 -0.10448967013976861 0 0 0 1</Rotation>
+<Translation>0.20031082564570254 1.0602617831883916 0.26421485246690457</Translation>
+</Transform>
+</Instance>
+<Instance name="Wristnew-1" uid="Wristnew-1" entityUid="Wristnew*:*Default">
+<Transform>
+<Rotation>-0.10448967013976861 0.99452597192536019 0 -0.99452597192536019 -0.10448967013976861 0 0 0 1</Rotation>
+<Translation>0.64784751301211452 1.0132414316254961 0.26421485246690452</Translation>
+</Transform>
+</Instance>
+<Instance name="Rotator1ct-1" uid="Rotator1ct-1" entityUid="Rotator1ct*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.041629718554665157 0.22561301379249427 0.26421485246690457</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concentric1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>VB_A_Basect-1</Uid>
+</InstancePath>
+<Position>0 0.19919999999999999 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Rotator1ct-1</Uid>
+</InstancePath>
+<Position>0 0.049999999999999989 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>VB_A_Basect-1</Uid>
+</InstancePath>
+<Position>0 0.25 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Rotator1ct-1</Uid>
+</InstancePath>
+<Position>0 0.049999999999999989 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Arm1ct-1</Uid>
+</InstancePath>
+<Position>0.050800000000000012 0 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Rotator1ct-1</Uid>
+</InstancePath>
+<Position>0.050000000000000003 0.15499999999999997 0.096000000000000085</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Arm1ct-1</Uid>
+</InstancePath>
+<Position>0.025400000000000006 0.75000000000000033 0.02540000000000002</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Rotator1ct-1</Uid>
+</InstancePath>
+<Position>-0.1016 0.10080000000000006 -0.025400000000000006</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric3">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Arm1ct-1</Uid>
+</InstancePath>
+<Position>0.035000000000000003 0.70000000000000007 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Arm2ct-1</Uid>
+</InstancePath>
+<Position>0 -0.044999999999999971 0.038100000000000023</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident4">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Arm1ct-1</Uid>
+</InstancePath>
+<Position>-0.025399999999999978 0.75000000000000033 0.02540000000000002</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Arm2ct-1</Uid>
+</InstancePath>
+<Position>0 0 0.025399999999999978</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident5">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Arm2ct-1</Uid>
+</InstancePath>
+<Position>0 0.4499999999999999 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Wristnew-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident6">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Arm2ct-1</Uid>
+</InstancePath>
+<Position>-0.025400000000000089 0.45000000000000001 0.025399999999999978</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Wristnew-1</Uid>
+</InstancePath>
+<Position>-0.025399999999999867 0.0099999999999998979 0.025400000000000034</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident7">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Arm2ct-1</Uid>
+</InstancePath>
+<Position>-0.025400000000000089 0.45000000000000001 0.025399999999999978</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Wristnew-1</Uid>
+</InstancePath>
+<Position>-0.025399999999999867 0.0099999999999998979 0.025400000000000034</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="Arm1ct" uid="Arm1ct*:*Default" version="318">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Arm1ct.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>15.901472066348372</Mass>
+<CenterOfMass>0 0.33742720387789166 0</CenterOfMass>
+<Inertia>0.80508176908272455 0.0078587162775429695 0.8063181657194618 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Arm1ct_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.89803921568627454" g="0.89803921568627454" b="0.89803921568627454" a="1"/>
+<Diffuse r="0.89803921568627454" g="0.89803921568627454" b="0.89803921568627454" a="1"/>
+<Specular r="0.62862745098039219" g="0.62862745098039219" b="0.62862745098039219" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Arm2ct" uid="Arm2ct*:*Default" version="186">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Arm2ct.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>10.508727755906353</Mass>
+<CenterOfMass>0 0.18966565670728466 0</CenterOfMass>
+<Inertia>0.2395835564061839 0.0062589820508334093 0.23898286063207558 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Arm2ct_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.89803921568627454" g="0.89803921568627454" b="0.89803921568627454" a="1"/>
+<Diffuse r="0.89803921568627454" g="0.89803921568627454" b="0.89803921568627454" a="1"/>
+<Specular r="0.62862745098039219" g="0.62862745098039219" b="0.62862745098039219" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Rotator1ct" uid="Rotator1ct*:*Default" version="521">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Rotator1ct.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>25.779759424256405</Mass>
+<CenterOfMass>-0.0072067997996014162 0.10036043525128903 7.4666544158517586e-10</CenterOfMass>
+<Inertia>0.12784459218218516 0.15175429659490056 0.10414645102317532 -4.5111590419750955e-07 -6.6704351631417788e-07 -0.0066638727329834833</Inertia>
+</MassProperties>
+<GeometryFile name="Rotator1ct_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.52941176470588236" g="0.5490196078431373" b="0.5490196078431373" a="1"/>
+<Diffuse r="0.52941176470588236" g="0.5490196078431373" b="0.5490196078431373" a="1"/>
+<Specular r="0.37058823529411761" g="0.3843137254901961" b="0.3843137254901961" a="1"/>
+<Emissive r="0.11117647058823529" g="0.11529411764705882" b="0.11529411764705882" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="VB_A_Basect" uid="VB_A_Basect*:*Default" version="176">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="VB_A_Basect.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>39.905598202279052</Mass>
+<CenterOfMass>-3.1449309364267232e-05 0.11077721728677668 1.8157267227309138e-05</CenterOfMass>
+<Inertia>0.28944862692456047 0.14520946717570371 0.28951605492085525 3.4491453250336588e-05 5.8394357717623748e-05 -5.9740949456302866e-05</Inertia>
+</MassProperties>
+<GeometryFile name="VB_A_Basect_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.89803921568627454" g="0.89803921568627454" b="0.89803921568627454" a="1"/>
+<Diffuse r="0.89803921568627454" g="0.89803921568627454" b="0.89803921568627454" a="1"/>
+<Specular r="0.62862745098039219" g="0.62862745098039219" b="0.62862745098039219" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Wristnew" uid="Wristnew*:*Default" version="160">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Wristnew.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.033660381633974487</Mass>
+<CenterOfMass>0 0.017833157822328336 0</CenterOfMass>
+<Inertia>3.0573645976295079e-05 1.1197679453091346e-05 3.0573645976295079e-05 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Wristnew_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
