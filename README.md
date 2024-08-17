@@ -1,8 +1,8 @@
-# The Arm Robot 3 Degree of freedom
+# The Arm Robot 3 Degree of Freedom
 
 ## Overview
-- This is a small project suitable for students who are studying majors such as mechatronics, electronics, automation, ... or research on arm robot at universities.
-- Dependency: Matlab, Solidworkds.
+- This is a small project suitable for students who are studying majors such as mechatronics, electronics, automation, ... or research on an arm robot at university.
+- Dependency: Matlab, Solidworks.
 
 ## Demo
 ![Writing Letter Control](Docs/writing_control.gif)
