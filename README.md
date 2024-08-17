@@ -1,11 +1,14 @@
 # The Arm Robot 3 Degree of freedom
 
-## Demo
-![Writing Letter Control](Docs/writing_control.gif)
-
 ## Overview
 - This is a small project suitable for students who are studying majors such as mechatronics, electronics, automation, ... or research on arm robot at universities.
 - Dependency: Matlab, Solidworkds.
+
+## Demo
+![Writing Letter Control](Docs/writing_control.gif)
+![Straight Line Control](Docs/straight_line_control.gif)
+![Singular Point](Docs/point_to_point.gif)
+![Point to Point](Docs/singular_point.gif)
 
 ## Implementation
 1. Design 3 degrees of freedom robotic arm using Solidworks.
